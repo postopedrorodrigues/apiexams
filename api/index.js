@@ -1,8 +1,8 @@
 const express = require('express');
 const cors = require('cors');
-const authRoutes = require('./auth');
-const patientRoutes = require('./patients');
-const logRoutes = require('./logs');
+const authRoutes = require('../routes/auth');
+const patientRoutes = require('../routes/patients');
+const logRoutes = require('../routes/logs');
 
 const app = express();
 

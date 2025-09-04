@@ -1,25 +1,27 @@
 {
-  "name": "back",
+  "name": "aphexams",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "api/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node api/index.js",
     "dev": "nodemon server.js",
+    "start": "node api/index.js",
+    "build": "prisma generate",
+    "vercel-build": "prisma generate",
     "db:push": "npx prisma db push",
     "db:seed": "node prisma/seed.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Medical API for APH Exams",
   "dependencies": {
     "@prisma/client": "^6.15.0",
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
-    "dotenv": "^17.2.2",
     "express": "^5.1.0",
-    "jsonwebtoken": "^9.0.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
     "nodemon": "^3.1.10",
     "prisma": "^6.15.0"
   }
